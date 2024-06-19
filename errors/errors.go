@@ -112,3 +112,10 @@ func NewRedisNotCache(message string) RestAPIError {
 		Error:   "Record not found in Redis cache",
 	}
 }
+func ToJson(o interface{}) string {
+	js, serr := json.Marshal(o)
+	if serr != nil {
+		log.Println("Error while marshalling: ", serr)
+	}
+	return string(js)
+}
