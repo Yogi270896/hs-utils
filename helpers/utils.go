@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"encoding/base64"
 	"encoding/json"
-	"hs-utils/confi"
-	"hs-utils/errors"
 	"io"
 	"log"
 	"net/http"
 	"unicode"
+
+	"github.com/yogi270896/hs-utils/confi"
+	"github.com/yogi270896/hs-utils/errors"
 )
 
 func LogMessage(m string, body interface{}) {

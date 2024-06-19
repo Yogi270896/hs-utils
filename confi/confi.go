@@ -1,7 +1,7 @@
 package confi
 
 import (
-	"hs-utils/envs"
+	"github.com/yogi270896/hs-utils/envs"
 )
 
 type AppConfig struct {
